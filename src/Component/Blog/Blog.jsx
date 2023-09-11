@@ -30,7 +30,7 @@ const Blog = ({ blog, handleAddToBookmark }) => {
         <div className="space-x-2">
           <span className="text-xl font-medium">{reading_time} min red</span>
           <button 
-          onClick={handleAddToBookmark}
+          onClick={() =>handleAddToBookmark(blog)}
           className="text-xl">
             <FaRegBookmark></FaRegBookmark>
           </button>

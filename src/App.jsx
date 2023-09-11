@@ -7,15 +7,17 @@ import Header from "./Component/Header/Header";
 function App() {
   const [bookmarks,setBookmarks] = useState([]);
 
-  const handleAddToBookmark = () =>{
-    console.log('bookmark added soon');
+  const handleAddToBookmark = (blog) =>{
+
+    const newBookmarks = [...bookmarks,blog]
+    setBookmarks(newBookmarks)
   }
   return (
     <>
       <Header></Header>
-      <div className="container mx-auto md:flex justify-between">
+      <div className="container mx-auto md:flex gap-6 justify-between ">
       <Blogs handleAddToBookmark={handleAddToBookmark}></Blogs>
-      <Bookmarks></Bookmarks>
+      <Bookmarks bookmarks={bookmarks}></Bookmarks>
       </div>
     </>
   );
