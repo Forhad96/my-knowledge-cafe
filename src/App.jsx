@@ -15,9 +15,11 @@ function App() {
   };
 
   // handle for reading time
-  const handleReadingTime = time =>{
-    console.log('reding time clicked',time);
+  const handleReadingTime = (id,time) =>{
     setReadingTime(readingTime + time)
+    // remove bookmark when mark as read
+    const remainingBookmarks = bookmarks.filter(bookmark => bookmark.id !== id);
+    setBookmarks(remainingBookmarks)
   }
   return (
     <>
