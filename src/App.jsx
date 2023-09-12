@@ -10,8 +10,11 @@ function App() {
 
   // handle for bookmarks
   const handleAddToBookmark = (blog) => {
-    const newBookmarks = [...bookmarks, blog];
+    // const newBookmarks = [...bookmarks, blog];
+    const previousBookmarks =bookmarks.filter(bookmark => bookmark.id !== blog.id)
+    const newBookmarks = [...previousBookmarks,blog]
     setBookmarks(newBookmarks);
+    
   };
 
   // handle for reading time
