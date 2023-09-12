@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { FaRegBookmark } from "react-icons/fa";
 
-const Blog = ({ blog, handleAddToBookmark }) => {
+const Blog = ({ blog, handleAddToBookmark,handleReadingTime }) => {
   const {
     cover,
     title,
@@ -29,25 +29,27 @@ const Blog = ({ blog, handleAddToBookmark }) => {
         </div>
         <div className="space-x-2">
           <span className="text-xl font-medium">{reading_time} min red</span>
-          <button 
-          onClick={() =>handleAddToBookmark(blog)}
-          className="text-xl">
+          <button onClick={() => handleAddToBookmark(blog)} className="text-xl">
             <FaRegBookmark></FaRegBookmark>
           </button>
         </div>
       </div>
       <h3 className="text-4xl font-bold my-4">{title}</h3>
 
-      {hashtags.map((hash, idx) => (
-        <span key={idx} className="text-xl font-medium text-gray-400">
-          <a href=""> #{hash} </a>
-        </span>
-      ))}
+      <p>
+        {hashtags.map((hash, idx) => (
+          <span key={idx} className="text-xl font-medium text-gray-400">
+            <a href=""> #{hash} </a>
+          </span>
+        ))}
+      </p>
+      <button onClick={()=>handleReadingTime(reading_time)} className="text-purple-600 underline font-bold my-7">Mark as Read</button>
     </div>
   );
 };
 Blog.propTypes = {
   blog: PropTypes.object.isRequired,
-  handleAddToBookmark: PropTypes.func.isRequired
+  handleAddToBookmark: PropTypes.func.isRequired,
+  handleReadingTime: PropTypes.func.isRequired
 };
 export default Blog;
