@@ -1,3 +1,4 @@
+// Blogs.jsx
 import PropTypes from "prop-types";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -20,20 +21,16 @@ const Blogs = ({
 
   // send data for display bookmark form local storage
   useEffect(() => {
-    if (!bookmarks?.length) {
-      //   displayBookmarksFromLS(blogs);
-      const data = getDataToLS();
-
-      let currentCart = [];
-      for (let i = 0; i < data.length; i++) {
-        console.log(data[i]);
-        let currentCart = blogs.filter((item) => item.id == data[i]);
-        // currentCart.push(blog);
-      }
-      setBookmarks(currentCart);
-      console.log(currentCart);
+    const local_data = getDataToLS();
+    let filtered = [];
+    console.log(local_data);
+    for (let i = 0; i < local_data.length; i++) {
+      const item = blogs.find((item) => item.id == local_data[i]);
+      filtered.push(item);
     }
-  }, [blogs, bookmarks]);
+    console.log(filtered || []);
+    setBookmarks(filtered || []);
+  }, [blogs, setBookmarks]);
 
   return (
     <div className="w-2/3">
@@ -51,6 +48,8 @@ const Blogs = ({
 Blogs.propTypes = {
   handleAddToBookmark: PropTypes.func.isRequired,
   handleReadingTime: PropTypes.func.isRequired,
+  bookmarks: PropTypes.any,
+  setBookmarks: PropTypes.any,
 };
 
 export default Blogs;
