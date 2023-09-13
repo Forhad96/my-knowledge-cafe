@@ -38,5 +38,108 @@
     "posted_date": "June 5, 2023",
     "reading_time": 9,
     "hashtags": ["development", "resources"]
-  }
+  },
+    {
+      "id": 5,
+      "cover": "https://i.ibb.co/84Zfw2n/1.jpg",
+      "title": "Introduction to Machine Learning",
+      "author_img": "https://i.ibb.co/VvLNdLL/boy1.png",
+      "author": "Jennifer Smith",
+      "posted_date": "October 8, 2023",
+      "reading_time": 7,
+      "hashtags": ["machinelearning", "beginners"]
+    },
+    {
+      "id": 6,
+      "cover": "https://i.ibb.co/6N2dgnZ/2.png",
+      "title": "Cooking Tips for Beginners",
+      "author_img": "https://i.ibb.co/7rFSJx5/girl1.jpg",
+      "author": "Emma Johnson",
+      "posted_date": "November 12, 2023",
+      "reading_time": 4,
+      "hashtags": ["cooking", "beginners"]
+    },
+    {
+      "id": 7,
+      "cover": "https://i.ibb.co/84Zfw2n/1.jpg",
+      "title": "Traveling on a Budget",
+      "author_img": "https://i.ibb.co/VvLNdLL/boy1.png",
+      "author": "Mark Davis",
+      "posted_date": "December 5, 2023",
+      "reading_time": 6,
+      "hashtags": ["travel", "budget"]
+    },
+    {
+      "id": 8,
+      "cover": "https://i.ibb.co/6N2dgnZ/2.png",
+      "title": "Healthy Lifestyle Choices",
+      "author_img": "https://i.ibb.co/7rFSJx5/girl1.jpg",
+      "author": "Sophia Martinez",
+      "posted_date": "January 20, 2024",
+      "reading_time": 5,
+      "hashtags": ["health", "lifestyle"]
+    },
+    {
+      "id": 9,
+      "cover": "https://i.ibb.co/84Zfw2n/1.jpg",
+      "title": "DIY Home Improvement Ideas",
+      "author_img": "https://i.ibb.co/VvLNdLL/boy1.png",
+      "author": "Daniel White",
+      "posted_date": "February 15, 2024",
+      "reading_time": 8,
+      "hashtags": ["DIY", "homeimprovement"]
+    },
+    {
+      "id": 10,
+      "cover": "https://i.ibb.co/6N2dgnZ/2.png",
+      "title": "The Art of Photography",
+      "author_img": "https://i.ibb.co/7rFSJx5/girl1.jpg",
+      "author": "Olivia Anderson",
+      "posted_date": "March 5, 2024",
+      "reading_time": 6,
+      "hashtags": ["photography", "art"]
+    },
+    {
+      "id": 11,
+      "cover": "https://i.ibb.co/vvTfkcv/4.jpg",
+      "title": "Tips for Effective Communication",
+      "author_img": "https://i.ibb.co/Sn7zB4q/girl2.jpg",
+      "author": "Liam Wilson",
+      "posted_date": "April 10, 2024",
+      "reading_time": 5,
+      "hashtags": ["communication", "tips"]
+    },
+    {
+      "id": 12,
+      "cover": "https://i.ibb.co/6N2dgnZ/2.png",
+      "title": "Exploring New Horizons: Space Travel",
+      "author_img": "https://i.ibb.co/VvLNdLL/boy1.png",
+      "author": "Ava Turner",
+      "posted_date": "May 18, 2024",
+      "reading_time": 7,
+      "hashtags": ["space", "travel"]
+    },
+    {
+      "id": 13,
+      "cover": "https://i.ibb.co/84Zfw2n/1.jpg",
+      "title": "The World of Science Fiction Literature",
+      "author_img": "https://i.ibb.co/VvLNdLL/boy1.png",
+      "author": "Noah Clark",
+      "posted_date": "June 25, 2024",
+      "reading_time": 6,
+      "hashtags": ["scifi", "literature"]
+    },
+    {
+      "id": 14,
+      "cover": "https://i.ibb.co/vvTfkcv/4.jpg",
+      "title": "Healthy Recipes for a Busy Lifestyle",
+      "author_img": "https://i.ibb.co/Sn7zB4q/girl2.jpg",
+      "author": "Mia Adams",
+      "posted_date": "July 7, 2024",
+      "reading_time": 4,
+      "hashtags": ["recipes", "health"]
+    }
+  
+  
+
 ]

@@ -21,15 +21,15 @@ const Blogs = ({
 
   // send data for display bookmark form local storage
   useEffect(() => {
-    const local_data = getDataToLS();
-    let filtered = [];
-    console.log(local_data);
-    for (let i = 0; i < local_data.length; i++) {
-      const item = blogs.find((item) => item.id == local_data[i]);
-      filtered.push(item);
+    const localStorageData = getDataToLS();
+    let filteredData = [];
+
+    for (const id of localStorageData) {
+      const item = blogs.find((blog) => blog.id == id);
+      filteredData.push(item);
     }
-    console.log(filtered || []);
-    setBookmarks(filtered || []);
+    console.log(filteredData || []);
+    setBookmarks(filteredData || []);
   }, [blogs, setBookmarks]);
 
   return (

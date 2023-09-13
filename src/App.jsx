@@ -11,14 +11,17 @@ function App() {
 
   // handle for bookmarks
   const handleAddToBookmark = (blog) => {
-    // const newBookmarks = [...bookmarks, blog];
-    const previousBookmarks = bookmarks.filter(
-      (bookmark) => bookmark.id !== blog.id
-    );
-    const newBookmarks = [...previousBookmarks, blog];
-    setBookmarks(newBookmarks);
+    const isExist = bookmarks.find(bookmark => bookmark.id === blog.id);
+    if(isExist){
+      return alert('Already Added')
+    }
+    else{
+    const newBookmarks = [...bookmarks, blog];
+      setBookmarks(newBookmarks)
+    }
+
+    
     saveDataToLS(blog.id);
-    console.log(blog);
   };
 
 
